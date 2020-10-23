@@ -8,7 +8,7 @@ Pre-Release Version. This is still under devlopment. This currently only works o
 
 ```
 cd /home/pi/Downloads
-git clone https://github.com/blaze005/PyPAD-Installer.git
+git clone https://github.com/blaze005/PyPAD-Folder.git
 
 ```
 After downloading open the PyPAD-Installer folder. Click on the app PyPAD It should run
