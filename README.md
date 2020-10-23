@@ -11,7 +11,7 @@ cd /home/pi/Downloads
 git clone https://github.com/blaze005/PyPAD-Folder.git
 
 ```
-After downloading open the PyPAD-Installer folder. Click on the app PyPAD It should run
+After downloading open the PyPAD-Folder. Click on the app PyPAD It should run
 
 I recomend that you copy the "PyPAD"and past it to your Desktop
 
