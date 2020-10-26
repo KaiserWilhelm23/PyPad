@@ -8,7 +8,7 @@ New features includ: changing all color of text, changing color of selected text
 There is aslo a right click function in the program. You can undo, redo, cut, copy, paste. Save and exit! When you save or save as. A little pop up screen will also appear. saying "your file saved!". If you all do not like this features I can remove it in the next update. 
 
 
-# To Download
+# To Download On RPI-4
 
 ```
 cd /home/pi/Downloads
@@ -19,3 +19,17 @@ After downloading open the PyPAD-Folder. Click on the app PyPAD It should run
 
 I recomend that you copy the "PyPAD"and past it to your Desktop
 
+# getting it to work on windows 10 or MAC
+
+Currently we do not have a version that will work for these OS's. 
+
+To get the program for these Operating systems. download the code from the github site it will be a .zip when finished. unzip and open the PyPAD.py program run from there or use pyinstaller to make it a exe
+
+
+
+```
+pip install pyinstaller
+
+pyinstaller --onefile --windowed [path to PyPAD.py]
+
+```
