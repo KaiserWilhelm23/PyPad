@@ -7,9 +7,13 @@ New features includ: changing all color of text, changing color of selected text
 There is aslo a right click function in the program. You can undo, redo, cut, copy, paste. Save and exit! When you save or save as. A little pop up screen will also appear. saying "your file saved!". If you all do not like this features I can remove it in the next update. 
 
 
-# Downloading
+# Downloading On RPI-4 (Rasberry Pi 4)
 Download using the site!! After downloading it extract the 'PyPAD-Main.zip' any where you would like. BUT the PyPAD.7z needs to be extracted in ```/home/pi/Desktop```
 
+
+# Downloading on Windows 7-10:
+
+Due to this program being buit on a Linux device. there are some extra steps needed.  You can download this the same way as the RPI-4. But you have to change the source code for the file paths to your liking. in the file ```PyPAD.py``` especialy for the icons. 
 
 
 
