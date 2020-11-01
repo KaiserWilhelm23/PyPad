@@ -13,7 +13,10 @@ You can now take screenshots with it
 
 
 # Downloading On RPI-4 (Rasberry Pi 4)
-
+Getting pyinsatller:
+```
+pip3 install pyinstaller
+```
 ```
 cd /home/pi/Desktop
 ```
