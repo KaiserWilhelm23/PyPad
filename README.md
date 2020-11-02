@@ -1,6 +1,10 @@
 # PyPAD Docs
 
-# Version 3.0
+PyPAD Docs is a free to use text editor that is open source. With many features and more to come in future updates.
+
+Only PyPAD Docs name is copyright. 
+
+# Version 3.0---Features
 
 New features includ: changing all color of text, changing color of selected text, changing color of the background (page color): Warning these colors will not be saved.  The ability to make text BOLD or Italic. undo and redo butons in the tools bar which is just below the File, Edit Visuals, Help, bar. Visuals  allows the user to change all text color and background color. 
 
