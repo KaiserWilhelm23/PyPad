@@ -41,6 +41,8 @@ Click on the green button to download the .zip extract it in the desktop.
 
 Open CMD
 
+If you do not have pyinstaller do this other wise skip ```pip install pyinstaller```
+
 ```
 cd C:\Users\User\Desktop\PyPAD-Docs-main\PyPAD-Docs-main
 ```
