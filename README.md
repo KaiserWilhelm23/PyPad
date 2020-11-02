@@ -42,7 +42,8 @@ This will automatically install the following:
 
 4. pyinstaller
 ```
-pip3 install -r requirments.txt
+pip3 install -r requirements.txt
+
 ```
 
 Turn into EXE pyinstaller required (This is optional) 
