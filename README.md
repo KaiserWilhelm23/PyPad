@@ -19,6 +19,15 @@ You can now take screenshots with it
 # Downloading On RPI-4 (Rasberry Pi 4)
 
 getting required Modules
+This will automatically install the following:
+
+1. Pillow 
+
+2. pyautogui
+
+3. fpdf
+
+4. pyinstaller
 ```
 pip3 install -U requirments.txt
 ```
