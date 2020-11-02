@@ -32,3 +32,19 @@ python3 setup.py
 ```
 After setup.py is finished go into the "dist" folder and run PyPAD_Docs or copy and paste it to 
 your desktop
+
+
+
+# Download on Windows
+
+Click on the green button to download the .zip extract it in the desktop.
+
+Open CMD
+
+```
+cd C:\Users\User\Desktop\PyPAD-Docs-main\PyPAD-Docs-main
+```
+```
+python setup.py
+```
+Open the "dist" folder to run PyPAD_Docs or copy it to your desktop for easy use!!
