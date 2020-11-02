@@ -18,6 +18,19 @@ You can now take screenshots with it
 
 # Downloading On RPI-4 (Rasberry Pi 4)
 
+
+Open Desktop in terminal
+```
+cd /home/pi/Desktop
+```
+Clone into the PyPAD Docs repository
+```
+git clone https://github.com/blaze005/PyPAD-Docs.git
+```
+Going into the file "PyPAD Docs" located on the desktop. Using the terminal
+```
+cd /home/pi/Desktop/PyPAD-Docs
+```
 getting required Modules
 This will automatically install the following:
 
@@ -31,18 +44,7 @@ This will automatically install the following:
 ```
 pip3 install -U requirments.txt
 ```
-Open Desktop in terminal
-```
-cd /home/pi/Desktop
-```
-Clone into the PyPAD Docs repository
-```
-git clone https://github.com/blaze005/PyPAD-Docs.git
-```
-Going into the file "PyPAD Docs" located on the desktop. Using the terminal
-```
-cd /home/pi/Desktop/PyPAD-Docs
-```
+
 Turn into EXE pyinstaller required (This is optional) 
 ```
 python3 setup.py
