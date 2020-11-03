@@ -13,6 +13,7 @@ There is aslo a right click function in the program. You can undo, redo, cut, co
 
 
 I have added a .txt2.pdf converter to PyPAD
+
 You can now take screenshots with it 
 
 
@@ -20,17 +21,17 @@ You can now take screenshots with it
 
 
 Open Desktop in terminal
-```
-cd /home/pi/Desktop
-```
+
+```cd /home/pi/Desktop```
+
 Clone into the PyPAD Docs repository
-```
-git clone https://github.com/blaze005/PyPAD-Docs.git
-```
+
+```git clone https://github.com/blaze005/PyPAD-Docs.git```
+
 Going into the file "PyPAD Docs" located on the desktop. Using the terminal
-```
-cd /home/pi/Desktop/PyPAD-Docs
-```
+
+```cd /home/pi/Desktop/PyPAD-Docs```
+
 getting required Modules
 This will automatically install the following:
 
@@ -41,15 +42,14 @@ This will automatically install the following:
 3. fpdf
 
 4. pyinstaller
-```
-pip3 install -r requirements.txt
 
-```
+```pip3 install -r requirements.txt```
+
 
 Turn into EXE pyinstaller required (This is optional) 
-```
-python3 setup.py
-```
+
+```python3 setup.py```
+
 After setup.py is finished go into the "dist" folder and run PyPAD_Docs or copy and paste it to 
 your desktop
 
@@ -57,16 +57,18 @@ your desktop
 
 # Download on Windows
 
-Click on the green button to download the .zip extract it in the desktop.
+Click on the green button to download the .zip extract it in the desktop. Make sure the 
+
+"PyPAD-Docs-main" is in the desk top
 
 Open CMD
 
-If you do not have pyinstaller do this other wise skip ```pip install pyinstaller```
 
-```
-cd C:\Users\User\Desktop\PyPAD-Docs-main\PyPAD-Docs-main
-```
-```
-python setup.py
-```
+```cd C:\Users\User\Desktop\PyPAD-Docs-main\PyPAD-Docs-main```
+
+
+```pip install -r requirements.txt```
+
+
+```python setup.py```
 Open the "dist" folder to run PyPAD_Docs or copy it to your desktop for easy use!!
