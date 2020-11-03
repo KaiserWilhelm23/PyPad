@@ -72,3 +72,28 @@ Open CMD
 
 ```python setup.py```
 Open the "dist" folder to run PyPAD_Docs or copy it to your desktop for easy use!!
+
+
+
+
+# PyPAD Lite
+
+PyPAD lite is a cut down version of PyPAD to fit on peoples hard drives better here is how to download!
+
+# Download on RPI-4
+
+Go into the Desktop
+
+```cd /home/pi/Desktop```
+
+Clone Into the PyPAD Lite repository.
+
+```git clone https://github.com/blaze005/PyPAD-Lite.git```
+
+Go into the PyPAD Lite directory
+
+```cd /home/pi/Desktop/PyPAD-Lite```
+
+Run setup.py (optional)
+
+```python3 setup.py```
