@@ -16,6 +16,8 @@ I have added a .txt2.pdf converter to PyPAD
 
 You can now take screenshots with it 
 
+3.5 Feature: A update function this can be found in the "File" menu.. This updates all of the packages (modules the app uses)
+
 
 # Downloading On RPI-4 (Rasberry Pi 4)
 
