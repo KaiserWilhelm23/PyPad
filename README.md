@@ -10,7 +10,7 @@ Only PyPAD Docs name is copyright.
 
 DKNSeRvTxGxs2kBv19Cmteb9gmSScnx4tP
 
-# Version 3.0---Features
+# Version 3.5---Features
 
 New features includ: changing all color of text, changing color of selected text, changing color of the background (page color): Warning these colors will not be saved.  The ability to make text BOLD or Italic. undo and redo butons in the tools bar which is just below the File, Edit Visuals, Help, bar. Visuals  allows the user to change all text color and background color. 
 
