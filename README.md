@@ -2,7 +2,13 @@
 
 PyPAD Docs is a free to use text editor that is open source. With many features and more to come in future updates.
 
+
+
 Only PyPAD Docs name is copyright. 
+
+# Donate DogeCoin
+
+DKNSeRvTxGxs2kBv19Cmteb9gmSScnx4tP
 
 # Version 3.0---Features
 
