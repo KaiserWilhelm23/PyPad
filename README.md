@@ -14,19 +14,13 @@ https://discord.gg/Djmwmsz
 
 DKNSeRvTxGxs2kBv19Cmteb9gmSScnx4tP
 
-# Version 3.5---Features
+# Version 4.0---Features
 
-New features includ: changing all color of text, changing color of selected text, changing color of the background (page color): Warning these colors will not be saved.  The ability to make text BOLD or Italic. undo and redo butons in the tools bar which is just below the File, Edit Visuals, Help, bar. Visuals  allows the user to change all text color and background color. 
-
-There is aslo a right click function in the program. You can undo, redo, cut, copy, paste. Save and exit! When you save or save as. A little pop up screen will also appear. saying "your file saved!". If you all do not like this features I can remove it in the next update. 
+New features includ: Font Selection
 
 
 
-I have added a .txt2.pdf converter to PyPAD
 
-
-
-3.5 Feature: A update function this can be found in the "File" menu.. This updates all of the packages (modules the app uses)
 
 
 # Downloading On RPI-4 (Rasberry Pi 4)
