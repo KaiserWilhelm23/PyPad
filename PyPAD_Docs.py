@@ -11,10 +11,11 @@ import pyautogui
 import time
 import os
 
+
 root = Tk()
 
 root.title("PyPAD")
-root.geometry('500x500')
+root.geometry('1000x1000')
 
 # Creating a photoimage object to use image 
 file = PhotoImage(file =r"") 
@@ -176,7 +177,7 @@ def help():
     pop.title('INFO')
     pop.geometry('350x200')
     pop_label = Label(pop, text='''
-PyPAD Version 2.0 Full Realse:
+PyPAD Version 4.0 Full Realse:
 PyPAD Name is Copyright PyPAD is OpenSource
 -------------------------------------------
 PyPAD Creator: Will Payne AKA NEO
@@ -267,9 +268,32 @@ text_scroll = Scrollbar(my_frame)
 text_scroll.pack(side=RIGHT, fill=Y)
 
 
-# Text box
-my_text = Text(my_frame,width=200, height=50, font=('Helvetica',11),selectbackground="light blue", selectforeground="black", undo=True, yscrollcommand=text_scroll.set)
+# Text box & font selection
+global tkvar
+tkvar = StringVar(root)
+choices = { 'Helvetica','Times','MS Sans Serif', 'Symbol', 'Courier'}
+tkvar.set('MS Sans Serif')
+
+
+popupMenu = OptionMenu(toolbar_fram, tkvar, *choices)
+popupMenu.grid(row = 0, column =3)
+
+
+def change_dropdown(*args):
+    value = tkvar.get() 
+    textFace(value)
+    
+my_text = Text(my_frame,width=200, height=50, font=("Helvetica",11),selectbackground="light blue", selectforeground="black", undo=True, yscrollcommand=text_scroll.set)
 my_text.pack()
+tkvar.trace('w', change_dropdown)
+
+def textFace(font_style):
+    
+    my_text.configure(font=(font_style,11))
+    
+    
+
+textFace(font)
 
 # config scrollbar
 text_scroll.config(command=my_text.yview)
@@ -289,7 +313,6 @@ file_menu.add_separator()
 
 file_menu.add_command(label='Convert',command=convert_file)
 file_menu.add_command(label='View A Picture',command=pic_view)
-
 file_menu.add_separator()
 file_menu.add_command(label="Exit",command=root.destroy, accelerator="Ctrl+Q")
 file_menu.add_separator()
@@ -305,6 +328,11 @@ edit_menu.add_command(label="Paste",command=lambda: paste_text(False))
 edit_menu.add_separator()
 edit_menu.add_command(label="Undo", command=my_text.edit_undo,accelerator='(Ctrl+z)')
 edit_menu.add_command(label="Redo",command=my_text.edit_redo, accelerator='(Ctrl+y)')
+
+#add Resouces menu
+resources_menu = Menu(my_menu,tearoff=False)
+my_menu.add_cascade(label='Resouces',menu=resources_menu )
+resources_menu.add_command(label="Search The Web",command=web)
 
 #add color menu
 colors_menu = Menu(my_menu,tearoff=False)
@@ -341,8 +369,10 @@ undo_button.grid(row=0, column=0,)
 redo_button = Button(toolbar_fram, text='-->',command=my_text.edit_redo)
 redo_button.grid(row=0, column=1,)
 
-redo_button = Button(toolbar_fram, text='Search The Web',command=web)
-redo_button.grid(row=0, column=2,)
+
+
+
+
 
 
 
