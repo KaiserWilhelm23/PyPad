@@ -14,9 +14,9 @@ https://discord.gg/Djmwmsz
 
 DKNSeRvTxGxs2kBv19Cmteb9gmSScnx4tP
 
-# Version 4.0---Features
+# Version 4.5---Features
 
-New features includ: Font Selection
+New features includ: Font size selection
 
 
 
