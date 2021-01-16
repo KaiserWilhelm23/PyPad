@@ -1,6 +1,6 @@
 # PyPAD Docs
 
-PyPAD Docs is a free to use text editor that is open source. With many features and more to come in future updates.
+PyPAD Docs is a free to use text editor that is open source. With many features and more to come in future updates. Our goal is to build a Text editor completley with python!
 
 
 
