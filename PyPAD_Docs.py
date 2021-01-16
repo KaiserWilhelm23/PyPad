@@ -270,30 +270,37 @@ text_scroll.pack(side=RIGHT, fill=Y)
 
 # Text box & font selection
 global tkvar
+global fsize
 tkvar = StringVar(root)
 choices = { 'Helvetica','Times','MS Sans Serif', 'Symbol', 'Courier'}
 tkvar.set('MS Sans Serif')
+
+# Font size selector
+fsize = StringVar(root)
+sizes = {8,9,10,11,12,14,18,24,30}
+fsize.set(11)
 
 
 popupMenu = OptionMenu(toolbar_fram, tkvar, *choices)
 popupMenu.grid(row = 0, column =3)
 
+popupMenu2 = OptionMenu(toolbar_fram, fsize, *sizes)
+popupMenu2.grid(row = 0, column=4)
 
-def change_dropdown(*args):
-    value = tkvar.get() 
-    textFace(value)
+
+def change_dropdown(*args): 
+    textFace()
+
+def size_dropdown(*args):
+    textFace()
     
 my_text = Text(my_frame,width=200, height=50, font=("Helvetica",11),selectbackground="light blue", selectforeground="black", undo=True, yscrollcommand=text_scroll.set)
 my_text.pack()
 tkvar.trace('w', change_dropdown)
+fsize.trace('w', size_dropdown)
 
-def textFace(font_style):
-    
-    my_text.configure(font=(font_style,11))
-    
-    
-
-textFace(font)
+def textFace():
+    my_text.configure(font=(tkvar.get(),fsize.get()))
 
 # config scrollbar
 text_scroll.config(command=my_text.yview)
