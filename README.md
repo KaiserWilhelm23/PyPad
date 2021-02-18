@@ -12,7 +12,7 @@ https://discord.gg/Djmwmsz
 
 # Donate DogeCoin. if you can 20-30 wold be great 
 
-DKNSeRvTxGxs2kBv19Cmteb9gmSScnx4tP
+DKcWwSP11p5HzZ7JcG8p1svWnt6QXwkWvc
 
 # Version 4.5---Features
 
