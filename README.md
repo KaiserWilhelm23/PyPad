@@ -6,8 +6,8 @@ PyPAD Docs is a free to use text editor that is open source. With many features 
 
 Only PyPAD Docs name is copyright. 
 
-![GitHub Logo](PyPAD-Docs/demopic.jpeg)
-Format: ![Alt Text](https://github.com/blaze005/PyPAD-Docs/blob/main/demopic.jpeg?raw=true)
+![PyPAD](PyPAD-Docs/demopic.jpeg)
+
 
 
 # PyPAD support discord server
