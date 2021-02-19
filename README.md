@@ -11,8 +11,7 @@ Format: ![Alt Text](https://github.com/blaze005/PyPAD-Docs/blob/main/demopic.jpe
 
 
 
-# PyPAD support discord server
-https://discord.gg/Djmwmsz
+
 
 
 # Donate DogeCoin. if you can 20-30 wold be great 
@@ -22,10 +21,6 @@ DKcWwSP11p5HzZ7JcG8p1svWnt6QXwkWvc
 # Version 4.5---Features
 
 New features includ: Font size selection
-
-
-
-
 
 
 # Downloading On RPI-4 (Rasberry Pi 4)
