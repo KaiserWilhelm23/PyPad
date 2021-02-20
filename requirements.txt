@@ -1,4 +1,0 @@
-Pillow
-pyautogui
-fpdf
-pyinstaller
