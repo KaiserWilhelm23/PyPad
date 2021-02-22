@@ -28,38 +28,24 @@ New features includ: Font size selection
 # Downloading On RPI-4 (Rasberry Pi 4)
 
 
-Open Desktop in terminal
+- Open Desktop in terminal
 
 ```cd /home/pi/Desktop```
 
-Clone into the PyPAD Docs repository
+- Clone into the PyPAD Docs repository
 
 ```git clone https://github.com/blaze005/PyPAD-Docs.git```
 
-Going into the file "PyPAD Docs" located on the desktop. Using the terminal
+- Going into the file "PyPAD Docs" located on the desktop. Using the terminal
 
-```cd /home/pi/Desktop/PyPAD-Docs```
-
-getting required Modules
-This will automatically install the following:
-
-1. Pillow 
-
-2. pyautogui
-
-3. fpdf
-
-4. pyinstaller
-
-```pip3 install -r requirements.txt```
+```cd /home/pi/Desktop/PyPAD-Docs/PyPAD-Docs-Python-Edition```
 
 
-Turn into EXE pyinstaller required (This is optional) 
+- Run PyPAD Docs, this will check your libraries and download the needed libraries. And then it will open the launcher of PyPAD from there you can click "Lets go!" and you are using PyPAD
 
-```python3 setup.py```
+ ```python3 PyPAD_Docs.py```
 
-After setup.py is finished go into the "dist" folder and run PyPAD_Docs or copy and paste it to 
-your desktop
+
 
 
 
@@ -69,17 +55,14 @@ Click on the green button to download the .zip extract it in the desktop. Make s
 
 "PyPAD-Docs-main" is in the desk top
 
-Open CMD
+- Open CMD
 
 
-```cd C:\Users\User\Desktop\PyPAD-Docs-main\PyPAD-Docs-main```
+```cd C:\Users\User\Desktop\PyPAD-Docs\PyPAD-Docs-Python-Edition```
 
 
-```pip install -r requirements.txt```
-
-
-```python setup.py```
-Open the "dist" folder to run PyPAD_Docs or copy it to your desktop for easy use!!
+Run PyPAD Docs, this will check your libraries and download the needed libraries. And then it will open the launcher of PyPAD from there you can click "Lets go!" and you are using PyPAD
+```python PyPAD_Docs.py```
 
 
 
