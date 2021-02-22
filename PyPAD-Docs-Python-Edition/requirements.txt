@@ -2,3 +2,5 @@ Pillow
 pyautogui
 fpdf
 pyinstaller
+ttkthemes
+pywebview

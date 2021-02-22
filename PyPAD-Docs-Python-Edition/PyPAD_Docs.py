@@ -1,3 +1,84 @@
+try:
+    from tkinter import *
+    from tkinter import filedialog
+    from tkinter import font
+    from tkinter import messagebox
+    from tkinter import colorchooser
+    from fpdf import FPDF
+    from PIL import Image
+    from tkinter import messagebox
+    from tkinter import ttk
+    import pyautogui
+    import time
+    import os
+    from tkinter.ttk import *
+    from ttkthemes import ThemedStyle
+
+except Exception as e:
+    import os
+    import tkinter
+
+
+    window1 = Tk()
+    window1.title("Welcome To PyPAD: Install")
+    window1.iconbitmap(r'text.ico')
+    window1.geometry("315x310")
+    file = PhotoImage(file =r"text.png")
+
+    def install():
+        os.system("pip install -r requirements.txt")
+        window1.destroy()
+        
+
+    def exit1():
+        window1.destroy()
+
+    def items():
+        file = open(r"requirements.txt")
+        window2 = Tk()
+        window2.title("Info")
+        window2.iconbitmap(r'text.ico')
+        window2.geometry("300x250")
+
+        def leave():
+            window2.destroy()
+            
+        
+        label1 = Label(window2, text="The following will be installed:").pack()
+        sep = Label(window2, text="========================").pack()
+        label2 = Label(window2, text=file.read()).pack()
+        sep1 = Label(window2, text="========================").pack()
+
+        button = Button(window2, text="Okay", command=leave).pack()
+        
+
+        window2.mainloop()
+        
+        
+
+
+    photoimage1 = Label(image=file)
+    photoimage1.pack()
+
+    info = Label(text= "You currently have missing modules... :(")
+    info.pack()
+    info = Label(text= "Cick 'OK' to install.")
+    info.pack()
+
+    button = Button(window1, text="OK", command=install).pack()
+    
+    button2 = Button(window1, text="Close", command=exit1).pack()
+
+    button1 = Button(window1, text="What will be installed?", command=items)
+
+    button1.place(relx = 0.0, 
+                rely = 1.0, 
+                anchor ='sw')
+    
+    window1.mainloop()
+
+
+
 from tkinter import *
 from tkinter import filedialog
 from tkinter import font
@@ -11,11 +92,49 @@ import pyautogui
 import time
 import os
 from tkinter.ttk import *
+from ttkthemes import ThemedStyle
 
+# Starting screen
+def starting_screen():
+    window = Tk()
+    window.title("Welcom to PyPAD")
+    
+    window.iconbitmap(r'text.ico')
+    window.geometry("315x310")
+
+    def kill():
+        window.destroy()
+
+    
+    file = PhotoImage(file =r"text.png")
+
+
+    photoimage1 = Label(image=file)
+    photoimage1.pack()
+
+    info = Label(text= "Welcome to PyPAD.. The Text Editor written with python 3")
+    info.pack()
+    info = Label(text= "Version: 5.0")
+    info.pack()
+
+    continue1 = Button(window, text="Let's Go!!",command=kill)
+    continue1.pack()
+
+    info = Label(window, text="MIT LICENSE (Open Source) 2021", )
+    info.place(relx = 0.0, 
+                 rely = 1.0, 
+                 anchor ='sw')
+
+    window.mainloop()
+starting_screen()
 
 root = Tk()
+root.configure(background="green")
 root.iconbitmap(r'text.ico')
 root.title("PyPAD")
+
+
+
 root.geometry('600x600')
 
 # Creating a photoimage object to use image 
@@ -176,9 +295,10 @@ def all_text_color():
 def help():
     pop = Toplevel(root)
     pop.title('INFO')
+    pop.iconbitmap(r'text.ico')
     pop.geometry('350x200')
     pop_label = Label(pop, text='''
-PyPAD Version 4.0 Full Realse:
+PyPAD Version 5.0 Full Realse:
 PyPAD Name is Copyright PyPAD is OpenSource
 -------------------------------------------
 PyPAD Creator: Will Payne AKA NEO
@@ -188,10 +308,51 @@ System Requirements:
 40 MB RAM''').pack()
     ok = Button(pop, text='Thanks',command=pop.destroy).pack()
 
+
+def license():
+    pop = Toplevel(root)
+    pop.title("MIT LICENSE")
+    pop.iconbitmap(r'text.ico')
+    pop.geometry('500x500')
+    pop_label = Label(pop,text= '''
+
+MIT License
+
+Will Payne
+
+2021
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+''').pack()
+
+    ok = Button(pop, text='Okay',command=pop.destroy).pack()
+
+
 def convert_file():
     pop = Toplevel(root)
     pop.title('Convert')
     pop.geometry('250x200')
+    pop.iconbitmap(r'text.ico')
     def converttxt2pdf():
         pdf = FPDF()
         pdf.add_page()  
@@ -212,8 +373,16 @@ def convert_file():
 
 
 def web():
-    import webbrowser
-    webbrowser.open('www.google.com')
+    try:
+        import webview
+        webview.create_window('Google', 'https://www.google.com/')
+        webview.start()
+
+    except Exception as e:
+        print(e)
+        messagebox.showerror("Modulel Error", e)
+
+
 
 
 
@@ -304,6 +473,38 @@ def search():
 
     root1.mainloop()
 
+def norm():
+    root.mainloop()
+    
+def winxp():
+    style = ThemedStyle(root)
+    style.set_theme("winxpblue")
+    
+def apple():
+    style = ThemedStyle(root)
+    style.set_theme("aquativo")
+
+def girl():
+    style = ThemedStyle(root)
+    style.set_theme("clearlooks")
+
+def wood():
+    style = ThemedStyle(root)
+    style.set_theme("kroc")
+
+def un():
+    style = ThemedStyle(root)
+    style.set_theme("radiance")
+
+    
+def settings():
+    pop = Tk()
+    pop.title("PyPAD Settings")
+    pop.iconbitmap(r'text.ico')
+    pop.geometry('500x500')
+
+    pop.mainloop()
+    
 
 
 # create a tool bar frame
@@ -395,6 +596,19 @@ edit_menu.add_separator()
 resources_menu = Menu(my_menu,tearoff=False)
 my_menu.add_cascade(label='Resouces',menu=resources_menu )
 resources_menu.add_command(label="Search The Web",command=web)
+#resources_menu.add_command(label="Settings",command=settings)
+
+
+#add theme menue
+theme_menu = Menu(my_menu,tearoff=False)
+my_menu.add_cascade(label='Themes',menu=theme_menu )
+theme_menu.add_command(label="Windows XP Theme",command=winxp)
+theme_menu.add_command(label="Apple OS Like Theme",command=apple)
+theme_menu.add_command(label="Feminine Theme",command=girl)
+theme_menu.add_command(label="Wood Theme",command=wood)
+theme_menu.add_command(label="Ubuntu Theme",command=un)
+
+
 
 #add color menu
 colors_menu = Menu(my_menu,tearoff=False)
@@ -409,7 +623,8 @@ colors_menu.add_command(label="Italics",command=italics_it)
  #add help menu
 help_menu = Menu(my_menu,tearoff=False)
 my_menu.add_cascade(label='Help',menu=help_menu)
-help_menu.add_command(label="help",command=help )
+help_menu.add_command(label="Help",command=help )
+help_menu.add_command(label="License",command=license )
 
 
 
