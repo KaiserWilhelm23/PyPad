@@ -20,9 +20,9 @@ DMEx9RDAkXnnEpXGT4XLYmEpjw7G93bkuq
 
 - This is to keep the PyPAD app going!
 
-# Version 4.5---Features
+# Version 5.0---Features
 
-New features includ: Font size selection
+New features includ: Themes and a launcher.
 
 
 # Downloading On RPI-4 (Rasberry Pi 4)
