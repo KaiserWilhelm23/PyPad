@@ -1,3 +1,4 @@
+print("Starting ")
 from tkinter import *
 from tkinter import filedialog
 from tkinter import font
@@ -6,6 +7,8 @@ from tkinter import colorchooser
 from tkinter import messagebox
 from tkinter import ttk
 from tkinter.ttk import *
+
+
 def PyPADlite():
     
     root = Tk()
@@ -907,6 +910,12 @@ fsize.trace('w', size_dropdown)
 def textFace():
     my_text.configure(font=(tkvar.get(),fsize.get()))
 
+def cmd():
+    os.system("start cmd")
+
+def open_python():
+    os.system("start python")
+
 # config scrollbar
 text_scroll.config(command=my_text.yview)
 
@@ -948,6 +957,10 @@ edit_menu.add_separator()
 resources_menu = Menu(my_menu,tearoff=False)
 my_menu.add_cascade(label='Resouces',menu=resources_menu )
 resources_menu.add_command(label="Search The Web",command=web)
+resources_menu.add_command(label="CMD",command=cmd)
+resources_menu.add_command(label="Python",command=open_python)
+
+
 #resources_menu.add_command(label="Settings",command=settings)
 
 
