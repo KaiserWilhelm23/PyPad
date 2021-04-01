@@ -165,7 +165,7 @@ def PyPADlite():
         pop.iconbitmap(r'text.ico')
         pop.geometry('350x200')
         pop_label = Label(pop, text='''
-PyPAD Version 5.0 Full Realse:
+PyPAD Version 5.5 Full Realse:
 PyPAD Name is Copyright PyPAD is OpenSource
 -------------------------------------------
 PyPAD Creator: Will Payne AKA NEO
@@ -467,7 +467,7 @@ def starting_screen():
 
     info = Label(text= "Welcome to PyPAD.. The Text Editor written with python 3")
     info.pack()
-    info = Label(text= "Version: 5.0")
+    info = Label(text= "Version: 5.5")
     info.pack()
 
     continue1 = Button(window, text="PyPAD Full Version!!",command=kill)
@@ -653,7 +653,7 @@ def help():
     pop.iconbitmap(r'text.ico')
     pop.geometry('350x200')
     pop_label = Label(pop, text='''
-PyPAD Version 5.0 Full Realse:
+PyPAD Version 5.5 Full Realse:
 PyPAD Name is Copyright PyPAD is OpenSource
 -------------------------------------------
 PyPAD Creator: Will Payne AKA NEO
@@ -728,15 +728,8 @@ def convert_file():
 
 
 def web():
-    try:
-        import webview
-        webview.create_window('Google', 'https://www.google.com/')
-        webview.start()
-
-    except Exception as e:
-        print(e)
-        messagebox.showerror("Modulel Error", e)
-
+    import webbrowser
+    webbrowser.open("https://google.com")
 
 
 
@@ -916,6 +909,11 @@ def cmd():
 def open_python():
     os.system("start python")
 
+def website():
+    import webbrowser
+    webbrowser.open("https://sites.google.com/view/pypad/home?authuser=0")
+    
+
 # config scrollbar
 text_scroll.config(command=my_text.yview)
 
@@ -990,6 +988,7 @@ help_menu = Menu(my_menu,tearoff=False)
 my_menu.add_cascade(label='Help',menu=help_menu)
 help_menu.add_command(label="Help",command=help )
 help_menu.add_command(label="License",command=license )
+help_menu.add_command(label="Our Website",command=website )
 
 
 
